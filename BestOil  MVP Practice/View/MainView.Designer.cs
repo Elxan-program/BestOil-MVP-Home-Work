@@ -112,6 +112,7 @@ namespace BestOil__MVP_Practice
             // 
             // Litertxtbox
             // 
+            this.Litertxtbox.BackColor = System.Drawing.Color.Khaki;
             this.Litertxtbox.Location = new System.Drawing.Point(174, 71);
             this.Litertxtbox.Name = "Litertxtbox";
             this.Litertxtbox.Size = new System.Drawing.Size(154, 34);
@@ -120,6 +121,7 @@ namespace BestOil__MVP_Practice
             // 
             // Cashtxtbox
             // 
+            this.Cashtxtbox.BackColor = System.Drawing.Color.Khaki;
             this.Cashtxtbox.Location = new System.Drawing.Point(174, 31);
             this.Cashtxtbox.Name = "Cashtxtbox";
             this.Cashtxtbox.Size = new System.Drawing.Size(154, 34);
@@ -136,6 +138,7 @@ namespace BestOil__MVP_Practice
             this.Liter_radio_btn.TabStop = true;
             this.Liter_radio_btn.Text = "Liter";
             this.Liter_radio_btn.UseVisualStyleBackColor = true;
+            this.Liter_radio_btn.CheckedChanged += new System.EventHandler(this.Liter_radio_btn_CheckedChanged);
             // 
             // Cash_radio_btn
             // 
@@ -191,6 +194,7 @@ namespace BestOil__MVP_Practice
             // 
             // GasComboBox
             // 
+            this.GasComboBox.BackColor = System.Drawing.Color.Khaki;
             this.GasComboBox.FormattingEnabled = true;
             this.GasComboBox.Location = new System.Drawing.Point(152, 53);
             this.GasComboBox.Name = "GasComboBox";
@@ -201,13 +205,14 @@ namespace BestOil__MVP_Practice
             // Buy_Btn
             // 
             this.Buy_Btn.AutoSize = true;
+            this.Buy_Btn.BackColor = System.Drawing.Color.Khaki;
             this.Buy_Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Buy_Btn.Location = new System.Drawing.Point(13, 472);
             this.Buy_Btn.Name = "Buy_Btn";
             this.Buy_Btn.Size = new System.Drawing.Size(347, 83);
             this.Buy_Btn.TabIndex = 1;
             this.Buy_Btn.Text = "BUY";
-            this.Buy_Btn.UseVisualStyleBackColor = true;
+            this.Buy_Btn.UseVisualStyleBackColor = false;
             this.Buy_Btn.Click += new System.EventHandler(this.Buy_Btn_Click);
             // 
             // MainView

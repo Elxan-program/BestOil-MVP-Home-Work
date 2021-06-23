@@ -17,6 +17,7 @@ namespace BestOil__MVP_Practice
         public MainView()
         {
             InitializeComponent();
+            this.BackColor = Color.FromArgb(246, 250,114);
         }
         public EventHandler<EventArgs> BuyButtunClicked { get; set; }
         public string Cashtext { get => Cashtxtbox.Text; set => Cashtxtbox.Text = value; }
@@ -90,7 +91,14 @@ namespace BestOil__MVP_Practice
 
         private void Cash_radio_btn_CheckedChanged(object sender, EventArgs e)
         {
+            Litertxtbox.ReadOnly = true;
+            Cashtxtbox.ReadOnly = false;
+        }
 
+        private void Liter_radio_btn_CheckedChanged(object sender, EventArgs e)
+        {
+            Cashtxtbox.ReadOnly = true;
+            Litertxtbox.ReadOnly = false;
         }
     }
 }
